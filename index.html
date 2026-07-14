@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CUST University Chatbot</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; background: #f4f6f8; padding: 40px; }
+    h1 { color: #1a73e8; }
+    #chatbox {
+      border: 1px solid #ccc; padding: 15px; background: white; border-radius: 8px;
+      height: 400px; overflow-y: auto; margin-bottom: 20px;
+    }
+    .user { color: #333; font-weight: bold; margin-bottom: 10px; }
+    .bot { color: #1a73e8; margin-bottom: 10px; }
+    .meta { color: #999; font-size: 12px; margin-left: 4px; }
+    input[type=text] {
+      padding: 10px; width: 70%; font-size: 16px;
+    }
+    button {
+      padding: 10px 20px; font-size: 16px; margin-left: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎓 University Chatbot</h1>
+  <div id="chatbox"></div>
+  <input type="text" id="userInput" placeholder="Ask me anything..." onkeydown="if(event.key==='Enter') sendMessage()">
+  <button onclick="sendMessage()">Send</button>
+  <button onclick="shutdownServer()">Quit</button>
+
+  <script>
+    const chatbox = document.getElementById('chatbox');
+
+    function appendMessage(sender, message, meta) {
+      const msg = document.createElement('div');
+      msg.className = sender;
+      const label = sender === 'user' ? 'You' : 'Bot';
+      msg.innerHTML = `<strong>${label}:</strong> ${message}` + (meta ? `<span class="meta">${meta}</span>` : '');
+      chatbox.appendChild(msg);
+      chatbox.scrollTop = chatbox.scrollHeight;
+    }
+
+    async function sendMessage() {
+      const inputField = document.getElementById("userInput");
+      const userText = inputField.value.trim();
+      if (!userText) return;
+
+      appendMessage('user', userText);
+      inputField.value = "";
+
+      const res = await fetch("/predict", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ input: userText })
+      });
+
+      const data = await res.json();
+      if (data.error) {
+        appendMessage('bot', data.error);
+        return;
+      }
+      const meta = data.confidence != null ? `(${data.intent}, ${(data.confidence * 100).toFixed(1)}%)` : '';
+      appendMessage('bot', data.response, meta);
+    }
+
+    async function shutdownServer() {
+      const confirmed = confirm("Are you sure you want to quit the chatbot?");
+      if (!confirmed) return;
+
+      await fetch("/shutdown", { method: "POST" });
+      alert("Chatbot has been shut down.");
+      window.close();
+    }
+  </script>
+</body>
+</html>
