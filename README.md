@@ -117,7 +117,7 @@ Python · TensorFlow/Keras · Flask · NumPy · scikit-learn (stratified split)
 ## Author
 
 **Syed Muhammad Kashaaf Haider** — BS Artificial Intelligence, Capital University of Science and Technology (CUST), Islamabad
-[GitHub](https://github.com/SyedKashaaf) · [LinkedIn](https://linkedin.com/in/syed-kashaaf-haider-10552833a)
+[GitHub](https://github.com/SyedKashaaf) · [LinkedIn](https://linkedin.com/in/syedkashaaf)
 
 ## License
 
