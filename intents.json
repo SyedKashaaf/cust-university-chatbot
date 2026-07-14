@@ -1,0 +1,179 @@
+{
+  "intents": [
+    {
+      "intent": "greeting",
+      "text": ["Hi", "Hello", "Hey", "Assalamualaikum", "Hi there", "Good morning", "Salam", "Hiya", "Good evening", "Yo"],
+      "responses": [
+        "Hi! Ask me anything related to fee structure, departments, their HOD names, scholarships of undergraduate programs, admission dates, or hostel fees at CUST."
+      ]
+    },
+    {
+      "intent": "bot_identity",
+      "text": ["Who are you?", "What can you do?", "What is this chatbot?", "What can you help me with?", "Tell me about yourself", "What do you know?", "How can you assist me?", "What kind of questions can I ask you?"],
+      "responses": [
+        "I'm the CUST University Assistant! I can answer questions about admission dates, fee structure by department, scholarships, hostel fees, department heads, and university leadership at Capital University of Science and Technology."
+      ]
+    },
+    {
+      "intent": "admission_dates",
+      "text": ["When do admissions open at CUST?", "What are CUST admission dates?", "When can I apply to CUST?", "CUST admission deadline?", "Last date to apply at CUST?", "When does the application period start?", "How do I apply to CUST?", "What is the application timeline for CUST?"],
+      "responses": [
+        "Admissions at CUST for Fall 2025 are open from May to July, with deadlines typically around mid-July. For Spring 2026, applications open in November 2025. Visit www.cust.edu.pk/admissions for exact dates."
+      ]
+    },
+    {
+      "intent": "fee_structure",
+      "text": ["CUST semester fees?", "How much are CUST tuition fees?", "CUST fee structure?", "What are the tuition fees?", "How expensive is CUST?", "What does it cost to study at CUST?"],
+      "responses": [
+        "Tuition fees at CUST for Fall 2025 vary by program. For example, BS Computer Science and BS Artificial Intelligence are PKR 292,500 per semester. Check www.cust.edu.pk/fee-structure for details or ask about a specific department."
+      ]
+    },
+    {
+      "intent": "fee_structure_computer_science",
+      "text": ["What is the fee for BS Computer Science at CUST?", "CUST CS fees?", "Computer Science tuition at CUST?", "BSCS fee at CUST?", "Cost of a Computer Science degree at CUST?"],
+      "responses": [
+        "The tuition fee for BS Computer Science at CUST is PKR 292,500 per semester for Fall 2025, excluding the one-time admission fee of PKR 20,000 and additional charges like library or registration fees. Visit www.cust.edu.pk/fee-structure for details."
+      ]
+    },
+    {
+      "intent": "fee_structure_Psychology",
+      "text": ["What is the fee for BS Psychology at CUST?", "CUST Psychology fees?", "Psychology tuition at CUST?", "BS Psych fee at CUST?", "Cost of a Psychology degree at CUST?"],
+      "responses": [
+        "The tuition fee for BS Psychology at CUST is PKR 148,500 per semester for Fall 2025, excluding the one-time admission fee of PKR 20,000 and additional charges like library or registration fees. Visit www.cust.edu.pk/fee-structure for details."
+      ]
+    },
+    {
+      "intent": "fee_structure_software_engineering",
+      "text": ["What is the fee for BS Software Engineering at CUST?", "CUST SE fees?", "Software Engineering tuition at CUST?", "BSSE fee at CUST?", "Cost of a Software Engineering degree at CUST?"],
+      "responses": [
+        "The tuition fee for BS Software Engineering at CUST is PKR 292,500 per semester for Fall 2025, excluding the one-time admission fee of PKR 20,000 and additional charges like library or registration fees. Visit www.cust.edu.pk/fee-structure for details."
+      ]
+    },
+    {
+      "intent": "fee_structure_artificial_intelligence",
+      "text": ["What is the fee for BS Artificial Intelligence at CUST?", "CUST AI fees?", "Artificial Intelligence tuition at CUST?", "BSAI fee at CUST?", "Cost of an AI degree at CUST?"],
+      "responses": [
+        "The tuition fee for BS Artificial Intelligence at CUST is PKR 292,500 per semester for Fall 2025, excluding the one-time admission fee of PKR 20,000 and additional charges like library or registration fees. Visit www.cust.edu.pk/fee-structure for details."
+      ]
+    },
+    {
+      "intent": "fee_structure_electrical_engineering",
+      "text": ["What is the fee for BS Electrical Engineering at CUST?", "CUST EE fees?", "Electrical Engineering tuition at CUST?", "BSEE fee at CUST?", "Cost of an Electrical Engineering degree at CUST?"],
+      "responses": [
+        "The tuition fee for BS Electrical Engineering at CUST is PKR 374,000 per semester for Fall 2025, excluding the one-time admission fee of PKR 20,000 and additional charges like library or registration fees. Visit www.cust.edu.pk/fee-structure for details."
+      ]
+    },
+    {
+      "intent": "fee_structure_mechanical_engineering",
+      "text": ["What is the fee for BS Mechanical Engineering at CUST?", "CUST ME fees?", "Mechanical Engineering tuition at CUST?", "BSME fee at CUST?", "Cost of a Mechanical Engineering degree at CUST?"],
+      "responses": [
+        "The tuition fee for BS Mechanical Engineering at CUST is PKR 374,000 per semester for Fall 2025, excluding the one-time admission fee of PKR 20,000 and additional charges like library or registration fees. Visit www.cust.edu.pk/fee-structure for details."
+      ]
+    },
+    {
+      "intent": "fee_structure_civil_engineering",
+      "text": ["What is the fee for BS Civil Engineering at CUST?", "CUST CE fees?", "Civil Engineering tuition at CUST?", "BSCE fee at CUST?", "Cost of a Civil Engineering degree at CUST?"],
+      "responses": [
+        "The tuition fee for BS Civil Engineering at CUST is PKR 374,000 per semester for Fall 2025, excluding the one-time admission fee of PKR 20,000 and additional charges like library or registration fees. Visit www.cust.edu.pk/fee-structure for details."
+      ]
+    },
+    {
+      "intent": "fee_structure_management_sciences",
+      "text": ["What is the fee for BBA at CUST?", "CUST Management Sciences fees?", "BS Accounting and Finance tuition at CUST?", "Cost of a BBA degree at CUST?", "How much does BS Accounting cost at CUST?"],
+      "responses": [
+        "The tuition fee for Management Sciences programs (e.g., BBA, BS Accounting & Finance) at CUST is PKR 250,000 per semester for Fall 2025, excluding the one-time admission fee of PKR 20,000 and additional charges like library or registration fees. Visit www.cust.edu.pk/fee-structure for details."
+      ]
+    },
+    {
+      "intent": "fee_structure_pharmacy",
+      "text": ["What is the fee for Pharm-D at CUST?", "CUST Pharmacy fees?", "Pharmacy tuition at CUST?", "Cost of Pharm-D at CUST?", "How much does a Pharmacy degree cost at CUST?"],
+      "responses": [
+        "The tuition fee for Pharm-D at CUST is PKR 316,800 per semester for Fall 2025, excluding the one-time admission fee of PKR 20,000 and additional charges like library or registration fees. Visit www.cust.edu.pk/fee-structure for details."
+      ]
+    },
+    {
+      "intent": "fee_structure_biosciences",
+      "text": ["What is the fee for BS Biosciences at CUST?", "CUST Bioinformatics fees?", "Biosciences tuition at CUST?", "Cost of a Bioinformatics degree at CUST?", "How much does BS Biosciences cost at CUST?"],
+      "responses": [
+        "The tuition fee for BS Bioinformatics & Biosciences at CUST is PKR 262,000 per semester for Fall 2025, excluding the one-time admission fee of PKR 20,000 and additional charges like library or registration fees. Visit www.cust.edu.pk/fee-structure for details."
+      ]
+    },
+    {
+      "intent": "fee_structure_english",
+      "text": ["What is the fee for BS English at CUST?", "CUST English fees?", "English tuition at CUST?", "Cost of a BS English degree at CUST?", "How much does BS English cost at CUST?"],
+      "responses": [
+        "The tuition fee for BS English at CUST is PKR 148,500 per semester for Fall 2025, excluding the one-time admission fee of PKR 20,000 and additional charges like library or registration fees. Visit www.cust.edu.pk/fee-structure for details."
+      ]
+    },
+    {
+      "intent": "fee_structure_all_departments",
+      "text": ["What is the fee structure for all departments at CUST?", "CUST fees for all programs?", "Tuition fees for all CUST departments?", "Fee structure for all courses at CUST?", "Give me fees for every program at CUST", "Can you list the full fee structure?"],
+      "responses": [
+        "The fee structure for undergraduate programs at CUST for Fall 2025 (per semester, excluding one-time admission fee of PKR 20,000) is:\n- Computer Science: PKR 292,500\n- Software Engineering: PKR 292,500\n- Artificial Intelligence: PKR 292,500\n- Electrical Engineering: PKR 374,000\n- Mechanical Engineering: PKR 374,000\n- Civil Engineering: PKR 374,000\n- Management Sciences (BBA, BS Accounting & Finance): PKR 250,000\n- Pharmacy (Pharm-D): PKR 316,800\n- Bioinformatics & Biosciences: PKR 262,000\n\nAdditional fees (e.g., library, registration) may apply. Fees are subject to annual revision. Visit www.cust.edu.pk/fee-structure for details."
+      ]
+    },
+    {
+      "intent": "programs_offered",
+      "text": ["What programs does CUST offer?", "List of degrees at CUST", "What courses are available at CUST?", "What can I study at CUST?", "Undergraduate programs at CUST?", "Which degrees can I pursue at CUST?", "What departments does CUST have?"],
+      "responses": [
+        "CUST offers undergraduate programs including Computer Science, Software Engineering, Artificial Intelligence, Electrical Engineering, Mechanical Engineering, Civil Engineering, Management Sciences (BBA, Accounting & Finance), Pharm-D, Bioinformatics & Biosciences, Psychology, and English. Ask me about fees or admission dates for any specific program."
+      ]
+    },
+    {
+      "intent": "university_location",
+      "text": ["Where is CUST located?", "CUST university address?", "CUST location?", "University location in Islamabad?", "How do I get to CUST?", "What is the CUST campus address?"],
+      "responses": [
+        "Capital University of Science and Technology (CUST) is located at Kahuta Road, Zone-V, Islamabad, Pakistan. It's easily accessible from the main expressway."
+      ]
+    },
+    {
+      "intent": "hostel_fee",
+      "text": ["CUST hostel fee?", "How much is hostel at CUST?", "Hostel charges at CUST?", "Is hostel available at CUST?", "Does CUST have dorms?", "What does student housing cost at CUST?"],
+      "responses": [
+        "CUST offers limited hostel facilities. Hostel charges are around PKR 12,000 to 15,000 per month, depending on the room type and facilities. It's best to contact the admin office for availability."
+      ]
+    },
+    {
+      "intent": "scholarships",
+      "text": ["Does CUST offer scholarships?", "Scholarships at CUST?", "Merit scholarships at CUST?", "Financial aid at CUST?", "How can I get a scholarship at CUST?", "Is there merit-based aid at CUST?"],
+      "responses": [
+        "Yes, CUST offers merit-based scholarships, need-based financial aid, and sibling/kinship discounts:\n- Board position holder / GPA 3.95 or higher: 100%\n- 80%+ marks in FA/FSc or GPA 3.90-4.00: 75%\n- Marks in FA/FSc or GPA 3.75-3.89: 50%\n- 70%+ marks in FA/FSc or GPA 3.50-3.74: 25%\n- 2nd semester onwards, GPA 3.00-3.49: 12.5%\nVisit www.cust.edu.pk/fee-structure for more information."
+      ]
+    },
+    {
+      "intent": "hods_departments",
+      "text": ["CUST HOD of Software Engineering?", "Heads of departments at CUST?", "Who are the department heads at CUST?", "Who heads the CS department at CUST?", "Department chairpersons at CUST?"],
+      "responses": [
+        "As of Fall 2025, the Heads of Departments at CUST are:\n- Computer Science: Dr. Masroor Ahmed\n- Software Engineering: Dr. Nadeem Anjum\n- Artificial Intelligence: Dr. Nadeem Anjum\n- Electrical Engineering: Dr. Noor Muhammad Khan\n- Mechanical Engineering: Dr. M. Mahabat Khan\n- Civil Engineering: Dr. Majid Ali\n- Math: Dr. Sagheer Ahmed\n- Pharmacy: Dr. Muzaffar Abbas\n- Bioinformatics & Biosciences: Dr. Syed Marriam Bakhtiari\n- English: Dr. Muhammad Umar Farooq\n(Note: Subject to change. Refer to the official website for the latest info.)"
+      ]
+    },
+    {
+      "intent": "vice_chancellor",
+      "text": ["CUST VC?", "Who is the VC at CUST?", "Vice chancellor of CUST?", "Who is the vice chancellor?", "Name of the CUST VC?", "Who currently leads CUST as vice chancellor?"],
+      "responses": [
+        "The Vice Chancellor of CUST is Prof. Dr. Muhammad Mansoor Ahmed, PhD (Cambridge, UK), CEng (UK), FIEE (UK), SMIEEE (USA), Eur. Ing (Brussels)."
+      ]
+    },
+    {
+      "intent": "chancellor",
+      "text": ["CUST chancellor?", "Who is the chancellor at CUST?", "Chancellor of CUST?", "Name of the CUST chancellor?", "Who currently serves as chancellor of CUST?"],
+      "responses": [
+        "The Chancellor of CUST is Mian Amer Mahmood, HI."
+      ]
+    },
+    {
+      "intent": "thanks",
+      "text": ["Thanks", "Thank you", "Thanks a lot", "That's helpful, thanks", "Appreciate it", "Thank you so much", "Great, thanks"],
+      "responses": [
+        "You're welcome! Let me know if you have more questions about CUST."
+      ]
+    },
+    {
+      "intent": "goodbye",
+      "text": ["Bye", "Goodbye", "See you", "Talk to you later", "See ya", "I'm done, bye", "That's all, goodbye"],
+      "responses": [
+        "Goodbye! Reach out anytime for more about Capital University of Science and Technology."
+      ]
+    }
+  ]
+}
