@@ -51,8 +51,7 @@ Bot: The tuition fee for BS Artificial Intelligence at CUST is PKR 292,500 per
 
 ```
 ├── app.py                      # Flask app: /predict, /health, /shutdown routes
-├── templates/
-│   └── index.html              # Chat UI
+├── index.html                  # Chat UI
 ├── train_model.py              # Trains the model with a stratified val split
 ├── generate_pickle_files.py    # Builds vocabulary (words.pkl) and intent labels (classes.pkl)
 ├── intents.json                # Training data: 25 intents, ~150 example phrases
@@ -60,8 +59,7 @@ Bot: The tuition fee for BS Artificial Intelligence at CUST is PKR 292,500 per
 ├── words.pkl                   # Vocabulary used for bag-of-words encoding
 ├── classes.pkl                 # Intent label list
 ├── requirements.txt
-└── report/
-    └── report.docx             # Full project report
+
 ```
 
 ## Running locally
